@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends 'Base.html' %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Addition App</title>
+</head>
+<body>
+<h1> Hello {{name}}!!! Go ahead and add tweet</h1>
+<form action="twt_res" method="post">
+    {% csrf_token %}
+    <label>Enter 1st tweet:</label><br>
+    <input type="text" name="twt1" size="100%"><br>
+    <label>Enter 2nd tweet:</label><br>
+    <input type="text" name="twt2" size="100%"><br>
+    <label>Enter 3rd tweet:</label><br>
+    <input type="text" name="twt3" size="100%"><br>
+    <label>Enter 4th tweet:</label><br>
+    <input type="text" name="twt4" size="100%"><br>
+    <label>Enter 5th tweet:</label><br>
+    <input type="text" name="twt5" size="100%"><br>
+    <label>Enter 6th tweet:</label><br>
+    <input type="text" name="twt6" size="100%"><br>
+    <label>Enter 7th tweet:</label><br>
+    <input type="text" name="twt7" size="100%"><br>
+    <label>Enter 8th tweet:</label><br>
+    <input type="text" name="twt8" size="100%"><br>
+    <label>Enter 9th tweet:</label><br>
+    <input type="text" name="twt9" size="100%"><br>
+    <label>Enter 10th tweet:</label><br>
+    <input type="text" name="twt10" size="100%"><br><br>
+    <input type="submit" style="margin:0 25%;position:relative;">
+</form>
+</body>
+{% endblock %}
+</html>

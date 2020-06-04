@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'firstapp/Base.html' %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Santash Is Testing</title>
+    <style>
+        table,th,td {border: 1px solid black;}
+    </style>
+</head>
+<body>
+<h1>{{name}} is working on this project</h1>
+<table style="width:30%">
+    <tr>
+       <th>PYTHON</th>
+       <th>JAVA</th>
+    </tr>
+    <tr>
+       <td> <a href="checking" target="_blank">Python</a> </td>
+       <td> Eclipse </td>
+    </tr>
+</table>
+</body>
+{% endblock %}
+</html>

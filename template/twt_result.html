@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Treding</title>
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: blue;
+  text-align: center;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+<body>
+<div class="topnav">
+    <div style="display:inline-block;">
+       <a href="/">Home</a>
+       <a href="/firstapp/tweet">Twitter Trend</a>
+    </div>
+</div>
+<div style="padding-left:16px">
+    <h1>Twitter Trends</h1>
+    <h2>Hi {{name}}! TOP 5 Twitter trends are:</h2>
+    <ol>
+        {% for outputs in output %}
+        <li>{{outputs}}</li>
+        {% endfor %}
+    </ol>
+</div>
+</body>
+</html>
